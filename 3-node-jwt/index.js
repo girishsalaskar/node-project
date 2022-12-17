@@ -59,4 +59,16 @@ app.post('/api/login', (req, res) => {
 	})
 });
 
-app.listen(3000, (req, res) => console.log("server started"));
+app.listen(3000, (req, res) => {
+
+
+console.log('       ______                                  _                     ');
+console.log('      / _____)                                (_)                    ');
+console.log('     ( (____  _____  ____ _   _ _____  ____    _  ___     ___  ____  ');
+console.log('      \\____ \\| ___ |/ ___) | | | ___ |/ ___)  | |/___)   / _ \\|  _ \\ ');
+console.log('      _____) ) ____| |    \\ V /| ____| |      | |___ |  | |_| | | | |');
+console.log('     (______/|_____)_|     \\_/ |_____)_|      |_(___/    \\___/|_| |_|');
+console.log('                                                                     ');
+
+
+});
