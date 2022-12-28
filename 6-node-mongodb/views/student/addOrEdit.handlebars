@@ -1,0 +1,29 @@
+<h3>
+    {{viewTitle}}
+</h3>
+
+<form action="/student" method="post" autocomplete="off">
+    <input type="hidden" name="_id" value="{{student._id}}">
+    <div class="mb-3">
+      <label for="fullName" class="form-label">Student Name</label>
+      <input type="text" name="fullName" id="fullName" class="form-control" placeholder="Full Name" aria-describedby="fullName" value="{{student.fullName}}">
+      <small id="fullName" class="text-muted">Full name of Student</small>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email Address</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Email ID" aria-describedby="email" value="{{student.email}}">
+      <small id="email" class="text-muted">Email ID of Student</small>
+    </div>
+    <div class="mb-3">
+      <label for="city" class="form-label">City</label>
+      <input type="text" name="city" id="city" class="form-control" placeholder="City" aria-describedby="city" value="{{student.city}}">
+      <small id="city" class="text-muted">City of student</small>
+    </div>
+    <div class="mb-3">
+      <label for="mobile" class="form-label">Mobile Number</label>
+      <input type="text" name="mobile" id="mobile" class="form-control" placeholder="Mobile Number" aria-describedby="mobile" value="{{student.mobile}}">
+      <small id="mobile" class="text-muted">Mobile number of student</small>
+    </div>
+    <button type="submit" class="btn btn-success">Save</button>
+    <button type="reset" class="btn btn-secondary">Reset</button>
+</form>
